@@ -1,0 +1,15 @@
+
+# Pedir el monto total:
+monto = float(input("Ingresa el monto total de la compra en pesos chilenos (CLP): $"))
+
+# Verificar si corresponde descuento:
+if monto > 50000:
+    descuento = monto * 0.15  # 15% de descuento
+    monto_final = monto - descuento
+else:
+    descuento = 0
+    monto_final = monto
+
+# Mostrar el resultado en formato CLP
+print(f"El descuento aplicado es: ${descuento:,.0f} CLP")
+print(f"El total a pagar es: ${monto_final:,.0f} CLP")

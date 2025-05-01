@@ -1,0 +1,20 @@
+
+# Pedir el primer número:
+num1 = float(input("Ingresa el primer número: "))
+
+# Pedir el segundo número:
+num2 = float(input("Ingresa el segundo número: "))
+
+# Pedir el tercer número:
+num3 = float(input("Ingresa el tercer número: "))
+
+# Comparar los números para saber cuál es el mayor:
+if num1 >= num2 and num1 >= num3:
+    mayor = num1
+elif num2 >= num1 and num2 >= num3:
+    mayor = num2
+else:
+    mayor = num3
+
+# Mostrar el resultado:
+print("El número mayor es:", mayor)
